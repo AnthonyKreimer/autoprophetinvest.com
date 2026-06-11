@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoProphet Invest | Financial Intelligence Platform</title>
+  <meta name="description" content="Discover your real financial reality. The AutoProphet Wealth Attrition Engine calculates what you actually keep after taxes, inflation, and structural costs.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body data-page="index">
+
+<canvas id="matrix-canvas"></canvas>
+
+<div class="overlay">
+
+  <!-- ── NAV ─────────────────────────────────────────────────── -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="AutoProphet Invest">
+      <span class="nav-wordmark">AutoProphet_</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="is-active">Reality Engine</a>
+      <a href="prophet.html">The Prophet</a>
+      <a href="#get-access" class="nav-btn btn">Get Template</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="live-dot"></span>
+      Live Attrition Feed Active
+    </div>
+    <h1 class="hero-h1">
+      You don't earn what<br>you think you <em>keep</em>.
+    </h1>
+    <p class="hero-sub">
+      AutoProphet exposes the gap between your income and your real retained value — 
+      after taxes, inflation, and every structural cost eating your financial life.
+    </p>
+    <div class="hero-actions">
+      <a href="#engine" class="btn btn-blue">Run Reality Diagnostic ↓</a>
+      <a href="prophet.html" class="btn btn-ghost">Daily Intelligence Feed</a>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── LIVE ATTRITION TERMINAL ──────────────────────────────── -->
+  <section class="section-sm" id="attrition">
+    <div class="wrap">
+      <div class="text-center mb-40">
+        <span class="eyebrow">Live System Feed</span>
+        <h2 class="section-title">Real-Time Wealth Attrition</h2>
+        <p class="section-sub" style="margin:0 auto;">Based on avg. U.S. income $65,000 at 8.5% real inflation. This is happening right now.</p>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="live-dot"></span>
+          SYSTEM_ATTRITION_FEED &mdash; LIVE_CURRENCY_DECAY
+        </div>
+        <div class="terminal-body">
+          <p style="font-family:var(--mono);font-size:0.62rem;color:var(--text-3);letter-spacing:2px;margin-bottom:8px;">ESTIMATED WEALTH BLEED &mdash; SINCE YOU LANDED</p>
+          <div id="liveBleedTotal" class="bleed-total">$0.0000</div>
+          <div class="bleed-grid">
+            <div class="bleed-card"><span>Per Second</span><b id="valSec">—</b></div>
+            <div class="bleed-card"><span>Per Minute</span><b id="valMin">—</b></div>
+            <div class="bleed-card"><span>Per Hour</span><b id="valHour">—</b></div>
+            <div class="bleed-card"><span>Per Day</span><b id="valDay">—</b></div>
+            <div class="bleed-card"><span>Per Week</span><b id="valWeek">—</b></div>
+            <div class="bleed-card"><span>Per Month</span><b id="valMonth">—</b></div>
+            <div class="bleed-card"><span>Per Quarter</span><b id="valQuart">—</b></div>
+            <div class="bleed-card"><span>Per Year</span><b id="valYear">—</b></div>
+          </div>
+          <p style="font-family:var(--mono);font-size:0.6rem;color:var(--text-3);margin-top:16px;">* AVG INCOME $65K @ 8.5% REAL-WORLD INFLATION INDEX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── PROBLEM SECTION ──────────────────────────────────────── -->
+  <section class="section">
+    <div class="wrap">
+      <div class="text-center mb-40">
+        <span class="eyebrow">The Reality Gap</span>
+        <h2 class="section-title">Where Your Money Actually Goes</h2>
+        <p class="section-sub" style="margin:0 auto;">Between your gross income and your real retained value sits a system working against you — silently, every month.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">Tax Drag</div>
+          <p class="feature-body">Federal, state, FICA, and local taxes consume 30–45% of income before you see a dollar. Most people never calculate the true compounded annual cost.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📉</div>
+          <div class="feature-title">Inflation Erosion</div>
+          <p class="feature-body">At 8.5% real inflation, $100 today is $91.50 next year. Over 10 years, you've lost nearly half your purchasing power while your nominal paycheck stays flat.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <div class="feature-title">Structural Costs</div>
+          <p class="feature-body">Fixed obligations — rent, insurance, debt minimums — are non-negotiable exits from income. Most households sit past the 40% obligation threshold without knowing it.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <div class="feature-title">Wage Stagnation</div>
+          <p class="feature-body">Real wage growth has trailed inflation for over a decade. If your income isn't growing faster than the real inflation rate, you earn less each year — on paper and in practice.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💸</div>
+          <div class="feature-title">Compounding Loss</div>
+          <p class="feature-body">Each year of financial inaction compounds the loss. The structural gap between what you earn and what you keep widens — silently — every single month.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <div class="feature-title">Visibility Gap</div>
+          <p class="feature-body">The financial system is not designed to show you this clearly. Most tools show income. AutoProphet shows attrition — what you actually control after every drain.</p>
+        </div>
+      </div>
+
+      <!-- STAT ROW -->
+      <div class="stat-row mt-40">
+        <div class="stat-block">
+          <div class="stat-number">31%</div>
+          <div class="stat-label">Avg. Annual Tax Drag</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number" style="color:var(--red);">−$5,525</div>
+          <div class="stat-label">Avg. Annual Inflation Loss</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number" style="color:var(--orange);">43%</div>
+          <div class="stat-label">Avg. Obligation-to-Income</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── REALITY ENGINE ────────────────────────────────────────── -->
+  <section class="section" id="engine">
+    <div class="wrap-narrow">
+
+      <div class="text-center mb-40">
+        <span class="eyebrow">Wealth Attrition Diagnostics</span>
+        <h2 class="section-title">Reality Engine</h2>
+        <p class="section-sub" style="margin:0 auto;">Input your parameters. The engine calculates your real retained value after every systemic drain.</p>
+      </div>
+
+      <!-- SESSION LOSS CLOCK -->
+      <div class="loss-clock-wrap">
+        <div class="loss-clock-label">Total Session Attrition</div>
+        <div id="lossClock">$0.0000</div>
+      </div>
+
+      <!-- INPUT CARD -->
+      <div class="card mb-24">
+        <span class="eyebrow" style="margin-bottom:18px;display:block;">Input Parameters</span>
+        <div class="input-grid">
+          <div class="form-group">
+            <label for="rate">Hourly Rate ($)</label>
+            <input type="number" id="rate" value="80" min="1">
+          </div>
+          <div class="form-group">
+            <label for="hours">Hours / Week</label>
+            <input type="number" id="hours" value="40" min="1" max="80">
+          </div>
+          <div class="form-group">
+            <label for="expenses">Monthly Expenses ($)</label>
+            <input type="number" id="expenses" value="3200" min="0">
+          </div>
+          <div class="form-group">
+            <label for="inflation">Inflation Index</label>
+            <select id="inflation">
+              <option value="0.03">3% — Official CPI</option>
+              <option value="0.09" selected>9% — Real-World Est.</option>
+              <option value="0.12">12% — Shadow Stats</option>
+              <option value="0.18">18% — Crisis Mode</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="projectionYears">Projection Window</label>
+            <select id="projectionYears">
+              <option value="1">1 Year</option>
+              <option value="3">3 Years</option>
+              <option value="5" selected>5 Years</option>
+              <option value="10">10 Years</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="taxRate">Tax Model</label>
+            <select id="taxRate">
+              <option value="0.24">24% — Moderate</option>
+              <option value="0.31" selected>31% — Standard</option>
+              <option value="0.38">38% — High Earner</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-blue btn-full mt-16" onclick="runAnalysis()">Initialize Diagnostic →</button>
+      </div>
+
+      <!-- RESULTS -->
+      <div id="results-area" style="display:none;">
+        <div class="card">
+          <div class="flex-between mb-16">
+            <span class="eyebrow" style="margin:0;">Diagnostic Results</span>
+            <span id="statusPill" class="status-pill">—</span>
+          </div>
+
+          <div class="result-summary">
+            <div class="result-cell">
+              <span class="result-label">Yearly Tax</span>
+              <span id="resTax" class="result-val text-red">—</span>
+            </div>
+            <div class="result-cell">
+              <span class="result-label">Inflation Decay (<span id="projLabel">5Y</span>)</span>
+              <span id="resInf" class="result-val text-red">—</span>
+            </div>
+            <div class="result-cell">
+              <span class="result-label">Annual Surplus</span>
+              <span id="resSurplus" class="result-val">—</span>
+            </div>
+          </div>
+
+          <div class="section-header-line">Reality Breakdown</div>
+          <div class="breakdown-grid">
+            <div>
+              <div class="metric-row"><span class="m-label">Real Hourly Value</span><span id="rbHourly" class="m-val">—</span></div>
+              <div class="metric-row"><span class="m-label">Real Daily Keep (8h)</span><span id="rbDaily" class="m-val">—</span></div>
+              <div class="metric-row"><span class="m-label">Real Weekly Keep</span><span id="rbWeekly" class="m-val">—</span></div>
+            </div>
+            <div>
+              <div class="metric-row"><span class="m-label">Real Monthly Keep</span><span id="rbMonthly" class="m-val">—</span></div>
+              <div class="metric-row"><span class="m-label">Real Quarterly Keep</span><span id="rbQuarterly" class="m-val">—</span></div>
+            </div>
+          </div>
+
+          <div class="output-split">
+            <div id="interpretation" class="interp-box">Run the diagnostic to see your system status and full interpretation.</div>
+            <div class="chart-wrap"><canvas id="realityChart"></canvas></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── DECAY CHART ───────────────────────────────────────────── -->
+  <section class="section">
+    <div class="wrap-narrow">
+      <span class="eyebrow">10-Year Projection</span>
+      <h2 class="section-title">Purchasing Power Decay</h2>
+      <p class="section-sub mb-40">$100,000 in cash value eroded at current real inflation rates. Mathematical, not hypothetical.</p>
+      <div class="card">
+        <canvas id="decayChart" style="max-height:360px;"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── GET ACCESS / LEAD CAPTURE ─────────────────────────────── -->
+  <section class="section" id="get-access">
+    <div class="wrap-narrow text-center">
+      <span class="eyebrow">Free Download</span>
+      <h2 class="section-title">Get the Financial Reality Template</h2>
+      <p class="section-sub" style="margin:0 auto 40px;">The AutoProphet Cash Flow Template — free. Seven sections. One clear picture of your real financial position.</p>
+
+      <div class="form-wrap">
+        <form action="mailto:hello@autoprophetinvest.com" method="POST" enctype="text/plain">
+          <label class="field-label" for="fname">Full Name</label>
+          <input class="field-input" type="text" id="fname" name="name" placeholder="Your name" required>
+          <label class="field-label" for="femail">Email Address</label>
+          <input class="field-input" type="email" id="femail" name="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn-green btn-full">Send Me the Template →</button>
+        </form>
+        <p class="form-note">No spam. One PDF. Your financial reality revealed. <a href="downloads/structural_wealth.pdf" style="color:var(--blue-hi);text-decoration:none;" download>Direct download here →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── FOOTER ────────────────────────────────────────────────── -->
+  <footer>
+    <img src="assets/images/logo.png" alt="AutoProphet" class="footer-logo">
+    <div class="footer-links">
+      <a href="index.html">Reality Engine</a>
+      <a href="prophet.html">The Prophet</a>
+      <a href="#get-access">Templates</a>
+      <a href="downloads/structural_wealth.pdf" download>Download PDF</a>
+    </div>
+    <p class="footer-copy">© 2026 AUTOPROPHET_INVEST &mdash; SYSTEM_STATUS: OPERATIONAL</p>
+    <p class="footer-legal">AutoProphet Invest does not provide financial advice. All tools and calculations are educational models illustrating the concepts of inflation, taxation, and structural wealth attrition. Investing involves risk. Consult a licensed professional before making financial decisions.</p>
+  </footer>
+
+</div><!-- /overlay -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

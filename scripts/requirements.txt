@@ -1,0 +1,9 @@
+# AutoProphet Invest — Python Dependencies
+# File: scripts/requirements.txt
+#
+# Install: pip install -r scripts/requirements.txt
+#
+# openai is only needed when AI generation is active.
+# The script runs without it using fallback rotating content.
+
+openai>=1.0.0

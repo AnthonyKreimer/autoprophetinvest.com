@@ -1,0 +1,14 @@
+{
+  "last_updated": "2026-06-08",
+  "source": "AutoProphet Economic Model — Updated via scripts/generate_insight.py",
+  "indicators": [
+    { "name": "CPI YoY (Real Est.)", "value": "8.4%",      "trend": "up"   },
+    { "name": "Fed Funds Rate",      "value": "4.25%",     "trend": "down" },
+    { "name": "10Y Treasury Yield",  "value": "4.51%",     "trend": "down" },
+    { "name": "Real Wage Growth",    "value": "−1.2% YoY", "trend": "up"   },
+    { "name": "M2 Supply YoY",       "value": "+3.8%",     "trend": "up"   },
+    { "name": "Dollar Index (DXY)",  "value": "102.3",     "trend": "down" },
+    { "name": "Debt-to-GDP",         "value": "124%",      "trend": "up"   },
+    { "name": "Personal Savings",    "value": "3.6%",      "trend": "up"   }
+  ]
+}

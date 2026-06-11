@@ -1,0 +1,15 @@
+{
+  "date": "2026-06-08",
+  "headline": "Structural Inflation Exceeds Baseline Yields — Purchasing Power Erosion Accelerates",
+  "analysis": "The current macro environment reflects a persistent divergence between official CPI readings and real consumer price pressure. Core inflation metrics continue to understate the cost burden on working households — particularly in housing, food, and insurance categories. Federal Reserve policy remains constrained by debt-to-GDP dynamics that make meaningful rate normalization structurally difficult without triggering a debt service crisis. The net effect: capital held in cash or low-yield instruments experiences compounding real loss estimated at 7–9% annually. Wage growth, while nominally positive in headline figures, continues to trail real purchasing power erosion for median income earners — a slow, structural transfer of value from holders of labor income to holders of real assets.",
+  "market_status": "UNSTABLE",
+  "action_signal": "Prioritize increasing income velocity over expense reduction alone. The structural drain from inflation cannot be solved by frugality — it requires asymmetric income positioning and asset allocation that grows faster than the real inflation rate. Begin with: (1) calculate your current obligation-to-income ratio, (2) identify any fixed cost renegotiable within 90 days, (3) audit your tax drag for unused deduction opportunities.",
+  "sectors": [
+    { "name": "Real Estate",       "signal": "HOLD"    },
+    { "name": "Commodities",       "signal": "BULLISH" },
+    { "name": "Fixed Income",      "signal": "BEARISH" },
+    { "name": "Cash / Savings",    "signal": "BEARISH" },
+    { "name": "Equities (Growth)", "signal": "HOLD"    },
+    { "name": "Inflation Hedges",  "signal": "BULLISH" }
+  ]
+}

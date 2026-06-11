@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Prophet | AutoProphet Invest</title>
+  <meta name="description" content="AI-generated daily financial intelligence. Macro analysis, sector signals, and optional Oracle interpretive layer. Updated daily via automation.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="prophet">
+
+<canvas id="matrix-canvas"></canvas>
+
+<div class="overlay">
+
+  <!-- ── NAV ─────────────────────────────────────────────────── -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="AutoProphet Invest">
+      <span class="nav-wordmark">AutoProphet_</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Reality Engine</a>
+      <a href="prophet.html" class="is-active">The Prophet</a>
+      <a href="index.html#get-access" class="nav-btn btn">Get Template</a>
+    </div>
+  </nav>
+
+  <!-- ── HEADER ───────────────────────────────────────────────── -->
+  <section class="section-sm" style="padding-bottom:0;">
+    <div class="wrap">
+      <span class="eyebrow">Automated Market Intelligence</span>
+      <h1 class="section-title">The Daily Prophet</h1>
+      <p class="section-sub">AI-generated macro intelligence updated daily via GitHub Actions. Connects structural economic forces to personal financial outcomes. No filler.</p>
+    </div>
+  </section>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────────── -->
+  <section class="section">
+    <div class="wrap">
+      <div style="display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:start;">
+
+        <!-- LEFT: INSIGHT + ORACLE -->
+        <div>
+
+          <!-- INSIGHT (loaded from JSON) -->
+          <div id="insightContainer">
+            <div class="insight-wrap" style="text-align:center;padding:56px 32px;">
+              <span class="live-dot" style="display:inline-block;margin-bottom:16px;"></span>
+              <p class="mono text-muted" style="font-size:0.72rem;letter-spacing:2px;">LOADING INTELLIGENCE FEED...</p>
+            </div>
+          </div>
+
+          <!-- ORACLE TOGGLE -->
+          <div class="mt-24">
+            <div class="oracle-toggle-bar" onclick="activateOracle()">
+              <div>
+                <span style="font-family:var(--mono);font-size:0.62rem;color:var(--text-3);letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:3px;">Optional Interpretive Layer</span>
+                <span class="oracle-toggle-label">◈ Oracle Mode</span>
+              </div>
+              <span id="oracleIcon" class="oracle-toggle-icon">▼</span>
+            </div>
+
+            <div id="oraclePanel" class="oracle-panel">
+              <p style="font-size:0.85rem;color:var(--text-2);line-height:1.75;margin-bottom:20px;">
+                An interpretive, symbolic layer — tarot archetypes, planetary context, and cyclical pattern reading. This is for narrative depth and personal reflection. It does not replace quantitative analysis.
+              </p>
+              <div id="oracleContent">
+                <p class="mono text-muted" style="font-size:0.72rem;">Generating symbolic interpretation...</p>
+              </div>
+              <div class="oracle-disclaimer">
+                ⚠ INTERPRETIVE MODE ACTIVE — This output is symbolic and experimental. It is not financial analysis, investment advice, or a predictive model. All financial decisions must be grounded in quantitative data only.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: SIDEBAR -->
+        <div>
+
+          <!-- ECONOMIC INDICATORS -->
+          <div class="card mb-16">
+            <span class="eyebrow" style="margin-bottom:14px;display:block;">Economic Indicators</span>
+            <div id="economicData">
+              <!-- Placeholder rows until JSON loads -->
+              <div class="metric-row"><span class="m-label">CPI YoY</span><span class="m-val neg">—</span></div>
+              <div class="metric-row"><span class="m-label">Fed Funds Rate</span><span class="m-val">—</span></div>
+              <div class="metric-row"><span class="m-label">10Y Treasury</span><span class="m-val">—</span></div>
+              <div class="metric-row"><span class="m-label">Real Wage Growth</span><span class="m-val neg">—</span></div>
+              <div class="metric-row"><span class="m-label">M2 Supply YoY</span><span class="m-val">—</span></div>
+              <div class="metric-row"><span class="m-label">Savings Rate</span><span class="m-val">—</span></div>
+            </div>
+            <p class="mono text-muted mt-8" style="font-size:0.6rem;line-height:1.5;">Updated via scripts/generate_insight.py<br>Source: data/economic_data.json</p>
+          </div>
+
+          <!-- REALITY ENGINE CTA -->
+          <div class="card mb-16" style="background:rgba(37,99,235,0.04);border-color:rgba(37,99,235,0.2);">
+            <span class="eyebrow text-blue" style="margin-bottom:10px;display:block;">Apply to Your Numbers</span>
+            <p style="font-size:0.85rem;color:var(--text-2);margin-bottom:16px;line-height:1.65;">Run this macro context through your personal income structure. See your exact reality.</p>
+            <a href="index.html#engine" class="btn btn-blue btn-full btn-sm">Open Reality Engine →</a>
+          </div>
+
+          <!-- DOWNLOAD CTA -->
+          <div class="card" style="background:var(--green-dim);border-color:rgba(16,185,129,0.25);">
+            <span class="eyebrow text-green" style="margin-bottom:10px;display:block;">Free Resource</span>
+            <p style="font-size:0.85rem;color:var(--text-2);margin-bottom:16px;line-height:1.65;">Financial Reality Cash Flow Template — seven sections, one clear picture of your real retained value.</p>
+            <a href="downloads/structural_wealth.pdf" download class="btn btn-green btn-full btn-sm">Download Free PDF →</a>
+          </div>
+
+        </div>
+      </div><!-- /grid -->
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── AUTOMATION NOTE ───────────────────────────────────────── -->
+  <section class="section-sm">
+    <div class="wrap-narrow text-center">
+      <span class="eyebrow">Automation Engine</span>
+      <h3 class="section-title" style="font-size:1.2rem;">How This Feed Works</h3>
+      <p class="section-sub" style="margin:0 auto 32px;">The Daily Prophet is powered by a GitHub Actions cron job that runs at 08:00 UTC every day. The Python script generates a fresh insight and commits it to <code style="background:var(--surface);padding:2px 8px;border-radius:3px;font-size:0.82rem;">data/latest_insight.json</code> automatically.</p>
+      <div class="feature-grid" style="max-width:640px;margin:0 auto;">
+        <div class="feature-card card-tight">
+          <div class="feature-icon">🤖</div>
+          <div class="feature-title">Daily AI Generation</div>
+          <p class="feature-body">Python script calls OpenAI API and writes structured JSON with headline, analysis, sector signals, and action signal.</p>
+        </div>
+        <div class="feature-card card-tight">
+          <div class="feature-icon">⚙</div>
+          <div class="feature-title">GitHub Actions</div>
+          <p class="feature-body">Scheduled cron at 08:00 UTC. Commits updated JSON to repo. Cloudflare Pages redeploys automatically on push.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── FOOTER ────────────────────────────────────────────────── -->
+  <footer>
+    <img src="assets/images/logo.png" alt="AutoProphet" class="footer-logo">
+    <div class="footer-links">
+      <a href="index.html">Reality Engine</a>
+      <a href="prophet.html">The Prophet</a>
+      <a href="index.html#get-access">Templates</a>
+      <a href="downloads/structural_wealth.pdf" download>Download PDF</a>
+    </div>
+    <p class="footer-copy">© 2026 AUTOPROPHET_INVEST &mdash; SYSTEM_STATUS: OPERATIONAL</p>
+    <p class="footer-legal">All insights are AI-generated educational content for informational purposes only. Oracle Mode outputs are symbolic and interpretive. Nothing on this site constitutes financial advice. Consult a licensed professional before making investment decisions.</p>
+  </footer>
+
+</div><!-- /overlay -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
